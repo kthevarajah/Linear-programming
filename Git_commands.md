@@ -1,23 +1,29 @@
-## Go to repository folder after restart
-cd ~/Linear_Programming
-
-## Check whether you are inside the Git repository
+# Status prüfen: zeigt geänderte Dateien
 git status
 
-## Add all changed files
+# Aktuellen Branch anzeigen
+git branch
+
+# Alle Änderungen hinzufügen
 git add .
 
-## Save a local version with a short message
-git commit -m "Update notebook"
+# Änderungen speichern
+git commit -m "Kurze Beschreibung der Änderung"
 
-## Upload changes to GitHub
+# Änderungen zu GitHub hochladen
 git push
 
-## Git workflow after Jupyter restart
+# Neuen Branch erstellen und direkt darauf wechseln
+git checkout -b stock-milp-prototype
 
-```bash
-cd ~/Linear_Programming
-git status
-git add .
-git commit -m "Update notebook"
-git push
+# Neuen Branch zum ersten Mal auf GitHub hochladen
+git push -u origin stock-milp-prototype
+
+# Zu main zurückwechseln
+git checkout main
+
+# Zu einem bestehenden Branch wechseln
+git checkout stock-milp-prototype
+
+# Neueste Änderungen von GitHub holen
+git pull
