@@ -1,29 +1,24 @@
-# Status prüfen: zeigt geänderte Dateien
-git status
+# Wichtigste Git-Commands
 
-# Aktuellen Branch anzeigen
+## Status prüfen
+```bash
+git status
 git branch
 
-# Alle Änderungen hinzufügen
+
+## Änderungen speichern
+
 git add .
-
-# Änderungen speichern
-git commit -m "Kurze Beschreibung der Änderung"
-
-# Änderungen zu GitHub hochladen
+git commit -m "Kurze Beschreibung"
 git push
 
-# Neuen Branch erstellen und direkt darauf wechseln
+## Neuen Branch erstellen
 git checkout -b stock-milp-prototype
-
-# Neuen Branch zum ersten Mal auf GitHub hochladen
 git push -u origin stock-milp-prototype
 
-# Zu main zurückwechseln
+## Zwischen Branches wechseln
 git checkout main
-
-# Zu einem bestehenden Branch wechseln
 git checkout stock-milp-prototype
 
-# Neueste Änderungen von GitHub holen
+#neuste Änderungen holen
 git pull
